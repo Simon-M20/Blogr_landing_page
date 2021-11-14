@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+header {
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    width: 100%;
+    height: 95vh;
+    border-bottom-left-radius: 120px;
+    background-image: url(/images/bg-pattern-intro.svg), linear-gradient( 95deg,  rgba(255,143,112,1) 11.2%, rgba(255,61,84,1) 91.1% );
+}
+
+header section h1 {
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;    
+} 
+
+header section h2 {
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
+header nav article button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+header section article button:hover {
+    color: hsl(356, 100%, 66%);
+    font-weight: 700;
+    background-color: #fff;
+}
+
+header nav article button:focus, header nav article button.is-active, header section article button:focus, header section article button.is-active  {
+    color: hsl(356, 100%, 66%);
+    font-weight: 700;
+    background-color: #fff;    
+}
+
+header nav article button.is-active:hover, header section article button.is-active:hover {
+    border: transparent;
+    color: #fff;
+    background-color: hsl(356, 100%, 66%);
+}
+
+header section article button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .2s ease-in;
+}
+
+.logo {
+    /* position: fixed;
+    top: 3rem;
+    left: 1.5rem;
+    padding: 0 3rem;
+    margin-right: 1.25rem;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0) scale(1); */
+    display: none;
+}
+
+.logo-2 {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    padding: 0 3rem;
+    margin-right: 1.25rem;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: -7.5rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2.5rem;
+    padding: 1.7rem 0;
+    background-color: rgb(255, 255, 255);
+    /* width: 90%; */
+    border-radius: 8px;
+
+    transform: 
+        translate(-2rem, -2.5rem)
+        scale(0);
+    transform-origin: 100% 0%;
+    transition: all 0.35s ease-in;
+}
+
+.nav-bar.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+.nav-bar section p {
+    color: hsl(208, 49%, 24%);
+    font-size: 1.2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+.menu {
+    position: relative;
+    background-color: hsl(0, 0%, 95%);
+    padding: .3rem 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.625;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    height: 0vh;
+    opacity: 0;
+    border-radius: 8px;
+    visibility: hidden;
+    
+}
+
+.menu.open {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu li {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1rem;
+    padding: .6rem 0;
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+}
+
+.menu li:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav .login {
+    display: none;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 1.2rem;
+    top: 2.6rem;
+}
+
+main {
+    padding: 64px 0;
+    overflow: hidden;
+    background-color: #fbfbfa;
+}
+
+main section section article div h3, main section h2 {
+    color: hsl(208, 49%, 24%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+main section section article div h3 {
+    font-size: 1.75rem;
+}
+
+main section section article div p {
+    color: hsl(207, 13%, 34%); font-family: 'Ubuntu' sans-serif; font-weight: 400;
+}
+
+main .second-bg {
+    margin: 90px 0 70px;
+    position: relative;
+    background-image: url(/images/bg-pattern-circles.svg), radial-gradient( circle farthest-corner at 10% 20%,  rgba(44,45,63,1) 0%, rgba(63,65,100,1) 90% );
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: -52%;
+    background-position-y: 85%;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    padding: 25px 0;
+}
+
+main section article div h3 {
+    color: hsl(208, 49%, 24%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+main section article div p {
+    color: hsl(207, 13%, 34%); 
+    font-family: 'Ubuntu' sans-serif; 
+    font-weight: 400;
+}
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 120px;
+}
+
+footer section article p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+footer section article ul li {
+    color: hsl(240, 2%, 79%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 75vh;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        top: -3rem;
+    }
+
+    .logo {
+        position: relative;
+        padding: 0 3rem;
+        margin-right: 1.25rem;
+        top: auto;
+        display: block;
+    }
+
+    .logo-2 {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;    
+        background-color: #fff;
+        border-radius: 8px;
+        margin-top: 1rem;
+        margin-left: -1rem;
+        padding: 1rem 1.5rem;
+        line-height: 1.625;
+        width: 140px;
+        height: auto;
+        opacity: 0;
+        visibility: hidden;
+        transform: 
+            translate(-2rem, -2.5rem)
+            scale(0);
+        transform-origin: 100% 0%;
+        transition: all 0.35s ease-in;
+    }
+
+    .menu.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0) scale(1);
+    }
+
+    .menu li {
+        font-size: 15px;
+        padding: 0.25rem 0;
+        font-weight: 300;
+    }
+
+    .menu-btn {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: transparent;
+        top: auto;
+        border-radius: 0;
+        justify-content: start;
+        align-items: center;
+        width: 66.666667%;
+        align-items: center;
+
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0) scale(1);
+    }
+
+    .nav-bar section p {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    nav .login {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 33.333333%;
+    }   
+
+    main .second-bg {
+        margin: 170px 0 120px;
+        position: relative;
+        background-image: url(/images/bg-pattern-circles.svg), radial-gradient( circle farthest-corner at 10% 20%,  rgba(44,45,63,1) 0%, rgba(63,65,100,1) 90% );
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-position-x: -52%;
+        background-position-y: 85%;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        padding: 45px 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

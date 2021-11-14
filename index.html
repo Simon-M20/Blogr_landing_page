@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogr</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Haburgers Btn -->
+    <link href="dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="flex flex-col justify-center items-center lg:pt-4 pb-20 lg:px-20 px-6">
+        <picture class="logo-2">
+            <img src="images/logo.svg" alt="Blogr Logo">
+        </picture>
+        <nav>
+            <article class="nav-bar">
+                <picture class="logo">
+                    <img src="images/logo.svg" alt="Blogr Logo">
+                </picture>
+                <section class="mr-2 relative">
+                    <p class="flex justify-center lg:text-white text-black hover:underline cursor-pointer items-center">Product <span class="px-3">
+                        <img class="cursor-pointer icon-product hidden lg:block" src="images/icon-arrow-light.svg" alt="icon-arrow-light">
+                        <img class="lg:hidden block cursor-pointer icon-product" src="images/icon-arrow-dark.svg" alt="icon-arrow-dark">
+                    </span></p>
+                    <ol class="menu product">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ol>
+                </section>
+                <section class="mr-2 relative">
+                    <p class="flex justify-center lg:text-white text-black hover:underline cursor-pointer items-center">Company <span class="px-3">
+                        <img class="cursor-pointer icon-company hidden lg:block" src="images/icon-arrow-light.svg" alt="icon-arrow-light">
+                        <img class="lg:hidden block cursor-pointer icon-company" src="images/icon-arrow-dark.svg" alt="icon-arrow-dark">
+                    </span></p>
+                    <ol class="menu company">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ol>
+                </section>
+                <section class="mr-2 relative">
+                    <p class="flex justify-center lg:text-white text-black hover:underline cursor-pointer items-center">Connect <span class="px-3">
+                        <img class="cursor-pointer hidden lg:block icon-connect" src="images/icon-arrow-light.svg" alt="icon-arrow-light">
+                        <img class="lg:hidden block cursor-pointer icon-connect" src="images/icon-arrow-dark.svg" alt="icon-arrow-dark">
+                    </span></p>
+                    <ol class="menu connect leading-relaxed">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ol>
+                </section>
+                <section class="lg:hidden block flex-col flex justify-center items-center mr-4 text-xl border-t-2 w-4/5 mt-8 py-6">
+                    <button class="px-9 py-3 mx-1 my-2 rounded-full font-semibold" style="color: hsl(208, 49%, 24%);">Login</button>
+                    <button class="px-9 py-3 mx-1 my-2 rounded-full is-active">Sign Up</button>
+                </section>            
+            </article>
+            <article class="login">
+                <button class="px-9 py-3 mx-1 rounded-full">Login</button>
+                <button class="px-9 py-3 mx-1 rounded-full is-active">Sign Up</button>
+            </article>
+        </nav>
+        <section class="w-full pt-12 lg:mt-0 mt-8 flex flex-col justify-center items-center">
+            <h1 class="lg:text-6xl text-3xl mb-3">A modern publishing platform</h1>
+            <h2 class="lg:text-xl text-lg mt-3">Grow your audience and build your online brand</h2>
+            <article class="mt-5 flex">
+                <button class="mx-2 px-6 py-2 rounded-full mt-8 is-active text-base">Start for Free</button>
+                <button class="mx-2 px-6 py-2 rounded-full mt-8 text-base">Learn More</button>
+            </article>
+        </section>
+    </header>
+
+    <button class="hamburger hamburger--emphatic menu-btn" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <main>
+        <section class="py-16 mb-28 w-full">
+            <h2 class="w-full text-center text-4xl mb-8">Designed for the future</h2>
+            <section class="flex flex-wrap-reverse justify-start items-center relative pb-16">
+                <article class="lg:w-1/2 w-full mt-20 lg:ml-16 flex flex-col justify-evenly items-center">
+                    <div class="lg:px-20 px-4 mb-8">
+                        <h3 class="text-left lg:pl-8 pb-4 tracking-tight lg:text-left text-center">Introducing an extensible editor</h3>
+                        <p class="px-8 leading-relaxed lg:text-left text-center">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                    </div>
+                    <div class="lg:px-20 px-4 mt-8">
+                        <h3 class=" text-left lg:pl-8 pb-4 tracking-tight lg:text-left text-center">Robust content management</h3>
+                        <p class="px-8 leading-relaxed lg:text-left text-center">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                    </div>
+                </article>
+                <article class="lg:absolute lg:-top-40 lg:-right-64 overflow-hidden">
+                    <picture class="overflow-hidden">
+                        <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+                    </picture>
+                </article>
+            </section>
+        </section>
+        <section class="flex lg:flex-row flex-col justify-center items-center second-bg relative">
+            <picture class="lg:w-1/2 w-full flex justify-center lg:relative absolute -top-44 lg:top-0">
+                <img src="images/illustration-phones.svg" alt="illustration-phones">
+            </picture>
+            <article class="lg:w-1/2 w-full flex flex-col justify-center items-center lg:justify-start lg:items-start lg:pr-20 relative top-10 lg:top-0 px-12">
+                <h2 class="text-4xl pb-4 text-white text-center lg:text-left">State of the Art Infrastructure</h2>
+                <p class="leading-relaxed text-white lg:pr-16 text-white text-center lg:text-left lg:mt-0 mt-3">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </article>
+        </section>
+        <section class="flex flex-wrap justify-end items-center relative py-6 lg:my-64">
+            <article class="lg:absolute lg:-top-40 lg:-left-72">
+                <picture class="overflow-hidden">
+                    <img src="images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop">
+                </picture>
+            </article>
+            <article class="lg:w-1/2 lg:mt-0 mt-12 w-full flex flex-col justify-start items-center lg:ml-12 lg:pr-24">
+                <div class="w-4/5 mb-8">
+                    <h3 class="text-3xl mb-4 text-center lg:text-left">Free, open, simple</h3>
+                    <p class="leading-relaxed text-center lg:text-left">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                </div>
+                <div class="w-4/5 mt-8">
+                    <h3 class="text-3xl mb-4 text-center lg:text-left">Powerful tooling</h3>
+                    <p class="leading-relaxed text-center lg:text-left">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="h-full py-16 flex flex-wrap lg:justify-start lg:items-start justify-center items-center">
+        <picture class="lg:w-1/5 w-full flex justify-center items-start">
+            <img src="images/logo.svg" alt="Blogr Logo">
+        </picture>
+        <section class="flex flex-wrap lg:justify-evenly lg:items-start justify-center items-center lg:w-4/5 w-full lg:mt-0 mt-14 pb-4">
+            <article class="lg:w-1/5 w-full flex flex-col justify-center lg:justify-start items-center lg:items-start text-white lg:mb-0 mb-10 text-center lg:text-left">
+                <p class="mb-5">Product</p>
+                <ul class="leading-relaxed">
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Overview</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Pricing</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Marketplace</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Features</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Integrations</a></li>                
+                </ul>
+            </article>
+            <article class="lg:w-1/5 w-full flex flex-col justify-center lg:justify-start items-center lg:items-start text-white lg:mb-0 mb-10 text-center lg:text-left">
+                <p class="mb-5">Company</p>
+                <ul class="leading-relaxed">
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">About</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Team</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Blog</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Careers</a></li>
+                </ul>
+            </article>
+            <article class="lg:w-1/5 w-full flex flex-col justify-center lg:justify-start items-center lg:items-start text-white lg:mb-0 mb-10 text-center lg:text-left">
+                <p class="mb-5">Connect</p>
+                <ul class="leading-relaxed">
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Contact</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Newsletter</a></li>
+                    <li class="py-1"><a class="hover:underline cursor-pointer" href="#">Linkedin</a></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+
+    <script src="Js/main.js"></script>
+</body>
+</html>
